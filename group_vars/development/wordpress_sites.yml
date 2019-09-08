@@ -3,13 +3,65 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  example.com:
+#Kaasbrik  
+  kaasbrik.com:
     site_hosts:
-      - canonical: example.test
-        redirects:
-          - www.example.test
-    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@example.test
+      - canonical: kaasbrik.loc
+    local_path: ../kaasbrik.com # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: info@jolux-webdesign.be
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
+#Simonnet
+  basisschoolsimonnet.be:
+    site_hosts:
+      - canonical: basisschoolsimonnet.loc
+    local_path: ../basisschoolsimonnet.be # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: info@jolux-webdesign.be
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
+#Jolux
+  jolux-webdesign.be:
+    site_hosts:
+      - canonical: jolux-webdesign.loc
+    local_path: ../jolux-webdesign.be # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: info@jolux-webdesign.be
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
+#EDL
+  edl-depuydt.be:
+    site_hosts:
+      - canonical: edl-depuydt.loc
+    local_path: ../edl-depuydt.be # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: info@jolux-webdesign.be
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
+
+#Decr-Leroy
+  decru-leroy.be:
+    site_hosts:
+      - canonical: decru-leroy.loc
+    local_path: ../decru-leroy.be # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: info@jolux-webdesign.be
     multisite:
       enabled: false
     ssl:
