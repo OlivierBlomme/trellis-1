@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-your_server_hostname
+trellis01.jolux-webdesign.be
 
 [web]
-your_server_hostname
+trellis01.jolux-webdesign.be
